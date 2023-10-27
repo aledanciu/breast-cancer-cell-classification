@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="x.perimeter_worst <= -0.027\ngini = 0.467\nsamples = 455\nvalue = [286, 169]\nclass = B", fillcolor="#f4cbae"] ;
+1 [label="x.concave_pts_worst <= 0.685\ngini = 0.09\nsamples = 276\nvalue = [263, 13]\nclass = B", fillcolor="#e68743"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+7 [label="gini = 0.037\nsamples = 266\nvalue = [261, 5]\nclass = B", fillcolor="#e5833d"] ;
+1 -> 7 ;
+8 [label="gini = 0.32\nsamples = 10\nvalue = [2, 8]\nclass = M", fillcolor="#6ab6ec"] ;
+1 -> 8 ;
+2 [label="x.perimeter_worst <= 0.318\ngini = 0.224\nsamples = 179\nvalue = [23, 156]\nclass = M", fillcolor="#56abe9"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="x.smoothness_worst <= 0.145\ngini = 0.498\nsamples = 47\nvalue = [22, 25]\nclass = M", fillcolor="#e7f3fc"] ;
+2 -> 3 ;
+5 [label="gini = 0.311\nsamples = 26\nvalue = [21, 5]\nclass = B", fillcolor="#eb9f68"] ;
+3 -> 5 ;
+6 [label="gini = 0.091\nsamples = 21\nvalue = [1, 20]\nclass = M", fillcolor="#43a2e6"] ;
+3 -> 6 ;
+4 [label="gini = 0.015\nsamples = 132\nvalue = [1, 131]\nclass = M", fillcolor="#3b9ee5"] ;
+2 -> 4 ;
+}
